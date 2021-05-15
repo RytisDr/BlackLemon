@@ -13,12 +13,12 @@ h1,
 h2 {
   font-family: "Merriweather", serif;
 }
-p {
+p,
+button {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 button {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   border: none;
   border-radius: 30px;
@@ -118,8 +118,16 @@ button {
 }
 .property .logo {
   display: block;
-  margin: auto;
+  margin: 27px auto 0px;
 }
 .property .title {
+  margin-top: 8px;
+  text-align: center;
   color: var(--highlight-text);
+}
+.property p {
+  font-size: 0.83rem;
+  line-height: 160%;
+  padding: 0px 13px 0px 10px;
+  color: #777777;
 }
