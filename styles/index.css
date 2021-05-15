@@ -1,8 +1,9 @@
 /* VARIABLES */
 :root {
   --highlight-text: #005128;
+  --left-margin: 20px;
 }
-
+/* //////////////////////////////////////////// */
 /* GLOBALS */
 html,
 body {
@@ -16,24 +17,32 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
-
-/* Mobile */
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 40px;
+}
+/* //////////////////////////////////////////// */
+/* MOBILE */
 #heroImg {
   height: 393px;
   background-image: url("/assets/img/hero_small.png");
   background-size: cover;
 }
 #content #text {
-  padding: 0px 30px 35px 30px;
+  padding: 0px 30px 35px var(--left-margin);
 }
 #productTitle {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 900;
-  margin: 7px 0px;
+  margin: 7px 0px 0px 0px;
 }
 #type {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  margin: 12px 0px 20px;
 }
 #type span,
 #productTags p {
@@ -43,48 +52,74 @@ p {
 #productTags {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, auto));
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 30px;
 }
 #productTags p {
   /* white-space: nowrap; */
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   width: fit-content;
   border: 2px solid black;
   border-radius: 30px;
-  padding: 8px 20px;
+  padding: 8px 17px;
   margin: 0 0; /* grid-controlled */
 }
 #productTags p:nth-of-type(2) {
   padding: 8px 35px;
 }
-
 #productInfo h2 {
+  margin-top: 5px;
   font-size: 1.05rem;
 }
+#productInfo p {
+  font-size: 0.8rem;
+  line-height: 159.1%;
+}
+#price {
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 20px 0px 10px;
+}
+#actionBtns {
+  width: auto;
+}
+#actionBtns button:first-of-type {
+  background-color: #de803d;
+  color: white;
+  margin-right: 12px;
+}
+#actionBtns button:nth-of-type(2) {
+  background-color: #bfe5c2;
+  margin-top: 10px;
+}
 
+/* Product property boxes */
 #propertyList {
   display: grid;
   grid-auto-flow: column;
-  padding: 0px 30px;
-  margin-bottom: 60px;
+  padding: 0px var(--left-margin);
+  margin-bottom: 50px;
   grid-template-columns: repeat(140px);
-  gap: 15px;
+  gap: 8px;
   overflow: scroll;
   /* IE, Edge, Firefox */
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 #propertyList::-webkit-scrollbar {
   /* Chrome, Safari, Opera */
   display: none;
 }
 #propertyList .property {
   width: 140px;
+  height: 250px;
   border: 1px solid #666666;
   border-radius: 6px;
 }
-#propertyList .title {
+.property .logo {
+  display: block;
+  margin: auto;
+}
+.property .title {
   color: var(--highlight-text);
 }
