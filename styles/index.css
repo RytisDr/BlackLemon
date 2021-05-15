@@ -1,1 +1,54 @@
+/* VARIABLES */
+:root {
+  --highlight-text: #005128;
+}
 
+/* GLOBALS */
+html,
+body {
+  margin: 0 auto;
+}
+h1,
+h2 {
+  font-family: "Merriweather", serif;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Mobile */
+#content {
+  margin-left: 20px;
+}
+#heroImg {
+  height: 393px;
+  background-image: url("/assets/img/hero_small.png");
+  background-size: cover;
+}
+#productTitle {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+#type span,
+#productTags p {
+  font-weight: 500;
+  color: var(--highlight-text);
+}
+#productTags {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, auto));
+  gap: 10px;
+}
+#productTags p {
+  /* white-space: nowrap; */
+  font-size: 0.9rem;
+  width: fit-content;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 8px 20px;
+  margin: 0 0; /* grid-controlled */
+}
+#productTags p:nth-of-type(2) {
+  padding: 8px 35px;
+}
