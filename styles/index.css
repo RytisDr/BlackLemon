@@ -29,7 +29,7 @@ button {
 /* MOBILE */
 #heroImg {
   height: 393px;
-  background-image: url("assets/img/hero_small.png");
+  background-image: url("/assets/img/hero_small.png");
   background-size: cover;
 }
 #content #text {
@@ -141,7 +141,7 @@ button {
 @media only screen and (min-width: 575px) {
   #heroImg {
     height: 393px;
-    background-image: url("assets/img/hero_large.png");
+    background-image: url("/assets/img/hero_large.png");
     background-size: cover;
   }
   #productTitle {
@@ -175,7 +175,7 @@ button {
     padding: 17px 40px;
   }
   #heroImg {
-    background-image: url("assets/img/hero_large.png");
+    background-image: url("/assets/img/hero_large.png");
     background-size: cover;
     position: absolute;
     top: 0;
